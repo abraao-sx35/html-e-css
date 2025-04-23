@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasse</title>
+    <style>
+        div > p {
+    display: none; /* Torna o parágrafo invisível inicialmente */
+}
+
+div:hover > p {
+    display: block; /* Torna o parágrafo visível ao passar o mouse sobre o div */
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+
+div:hover{
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <h1>pseudoclasse</h1>
+    <h4>desafio do texto</h4>
+    <div>
+        passe o mause
+        <p>texto escondido</p>
+    </div>
+</body>
+</html>
