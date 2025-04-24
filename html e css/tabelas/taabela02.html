@@ -14,10 +14,12 @@
             border: 1px solid black;
             padding: 10px;
             width: 200px;
+            border-collapse: collapse;
 
         }
         table{
             border-collapse: collapse;
+            position: relative;
         }
         .num{
             text-align: right;
@@ -32,6 +34,25 @@
             background-color: white;
             font-size: large;
         }
+
+        caption{
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        /* efeito zebrado nas listas
+        ntd-child == efeito a cada duas linhas , vc pode passar o parametro q deseja */
+        tbody > tr:nth-child(odd){ 
+            background-color: lightgray;
+        }
+        /* sticky vai fazer o cabecario ficar fixo e grudado*/
+        thead > tr > th{
+            position: sticky;
+            background-color: gray;
+            top: -1px;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +63,7 @@
         tfoot > tr , td , th
     -->
     <table>
+        <caption>populacao das unidades federativas</caption>
         <thead>
             <tr>
                 <th scope="col">estado</th>
