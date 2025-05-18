@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* versao mobile first */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background: black url(back-phone.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.829);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+img#pc{display: none;}
+img#tv{display: none;}
+img#tablet{display: none;}
+img#print{display: none;}
