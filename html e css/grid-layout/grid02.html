@@ -9,12 +9,11 @@
         .container{
             border: 1px solid black;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 100px 100px 100px;
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            grid-auto-flow: column;
             grid-gap: 20px;
-            align-items: normal;
-            justify-items: normal;
-            justify-content: space-around;
+            place-items: start center;
+            place-content: space-around end;
         }
 
         .container>div{
